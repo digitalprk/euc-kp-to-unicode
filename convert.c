@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	file_content = malloc (length);
 	converted_content = malloc (length*2);
 	memset(file_content, 0, length);
-	memset(converted_content, 0, length*2);
+	memset(converted_content, 0, length*2 + 2);
 	fseek(input_file, 0L, SEEK_SET);
 	
 	if (file_content)
